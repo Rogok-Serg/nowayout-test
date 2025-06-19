@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nowayout Test Task</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__left">
+            <a href="/" class="header__logo">
+              <img
+                src="images/logo-nwo.svg"
+                alt="Nowayout Logo"
+                class="header__logo-img"
+              />
+            </a>
+            <div class="header__info">
+              <div class="location">
+                <button class="location__toggle">
+                  <svg class="location__icon icon">
+                    <use href="images/symbol-defs.svg#icon-location"></use>
+                  </svg>
+                  <span class="location__current">Vienna</span>
+                </button>
+                <div class="location__dropdown">
+                  <a href="#" class="location__item location__item--active">
+                    <svg class="location__icon icon">
+                      <use href="images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    Vienna
+                  </a>
+                  <a href="#" class="location__item">
+                    <svg class="location__icon icon">
+                      <use href="images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    Linz
+                  </a>
+                  <a href="#" class="location__item">
+                    <svg class="location__icon icon">
+                      <use href="images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    Innsbruck
+                  </a>
+                  <a href="#" class="location__item">
+                    <svg class="location__icon icon">
+                      <use href="images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    Graz
+                  </a>
+                  <a href="#" class="location__item">
+                    <svg class="location__icon icon">
+                      <use href="images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    SCS
+                  </a>
+                </div>
+              </div>
+              <div class="contact">
+                <svg class="contact__icon icon">
+                  <use href="images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+43 660 806 0000" class="contact__phone"
+                  >+43 660 806 0000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="header__controls">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="/schedule" class="nav__link">Schedule</a>
+                </li>
+                <li class="nav__item">
+                  <a href="/rooms" class="nav__link">Rooms</a>
+                </li>
+                <li class="nav__item">
+                  <a href="/contacts" class="nav__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__right">
+              <div class="lang">
+                <a href="#" class="lang__option lang__option--active">
+                  <img
+                    src="images/united-kingdom.png"
+                    alt="United Kingdom"
+                    class="lang__flag"
+                  />
+                </a>
+                <a href="#" class="lang__option">
+                  <img
+                    src="images/germany.png"
+                    alt="Germany"
+                    class="lang__flag"
+                  />
+                </a>
+              </div>
+              <button class="menu-toggle">
+                <svg class="menu-toggle__icon" width="32" height="16">
+                  <use href="images/symbol-defs.svg#burger-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__bg">
+          <div class="hero__overlay"></div>
+          <div class="hero__content">
+            <div class="hero__text">
+              <h1 class="hero__headline">
+                №1 Escape <br />rooms in <br />Vienna
+              </h1>
+              <p class="hero__subtext">64,232 players worldwide chose us</p>
+              <a href="/schedule" class="hero__cta">Book Now</a>
+            </div>
+            <div class="hero__badge">
+              <div class="badge">
+                <div class="badge__circle">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <circle cx="28" cy="28" r="28" fill="#0B9D7A" />
+                    <g>
+                      <path
+                        d="M28 38c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10z"
+                        fill="#fff"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="badge__text">
+                  <span class="badge__title">Travelers'<br />Choice</span>
+                  <span class="badge__year">2020</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>Nowayout Test Task</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
