@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nowayout Test Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__left">
+            <a href="/" class="header__logo">
+              <img
+                src="images/logo-nwo.svg"
+                alt="Nowayout Logo"
+                class="header__logo-img"
+              />
+            </a>
+            <div class="header__info">
+              <div class="location">
+                <button class="location__toggle">
+                  <svg class="location__icon icon">
+                    <use href="images/symbol-defs.svg#icon-location"></use>
+                  </svg>
+                  <span class="location__current">Vienna</span>
+                </button>
+                <div class="location__dropdown">
+                  <a href="#" class="location__item location__item--active">
+                    <svg class="location__icon icon">
+                      <use href="images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    Vienna
+                  </a>
+                  <a href="#" class="location__item">
+                    <svg class="location__icon icon">
+                      <use href="images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    Linz
+                  </a>
+                  <a href="#" class="location__item">
+                    <svg class="location__icon icon">
+                      <use href="images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    Innsbruck
+                  </a>
+                  <a href="#" class="location__item">
+                    <svg class="location__icon icon">
+                      <use href="images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    Graz
+                  </a>
+                  <a href="#" class="location__item">
+                    <svg class="location__icon icon">
+                      <use href="images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    SCS
+                  </a>
+                </div>
+              </div>
+              <div class="contact">
+                <svg class="contact__icon icon">
+                  <use href="images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+43 660 806 0000" class="contact__phone"
+                  >+43 660 806 0000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="header__controls">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="/schedule" class="nav__link">Schedule</a>
+                </li>
+                <li class="nav__item">
+                  <a href="/rooms" class="nav__link">Rooms</a>
+                </li>
+                <li class="nav__item">
+                  <a href="/contacts" class="nav__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__right">
+              <div class="lang">
+                <a href="#" class="lang__option lang__option--active">
+                  <img
+                    src="images/united-kingdom.png"
+                    alt="United Kingdom"
+                    class="lang__flag"
+                  />
+                </a>
+                <a href="#" class="lang__option">
+                  <img
+                    src="images/germany.png"
+                    alt="Germany"
+                    class="lang__flag"
+                  />
+                </a>
+              </div>
+              <button class="menu-toggle">
+                <svg class="menu-toggle__icon" width="32" height="16">
+                  <use href="images/symbol-defs.svg#burger-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="modal-overlay" id="city-modal-overlay">
+      <div class="city-modal" id="city-modal">
+        <div class="city-modal__header">
+          <span class="city-modal__title">Choose your city:</span>
+          <button class="city-modal__close" id="city-modal-close" aria-label="Close">&times;</button>
+        </div>
+        <div class="city-modal__list">
+          <div class="city-modal__item city-modal__item--active">
+            <div class="city-modal__item-row">
+              <svg class="city-modal__icon icon"><use href="images/symbol-defs.svg#icon-location"></use></svg>
+              <span class="city-modal__city city-modal__city--active">Vienna</span>
+            </div>
+            <div class="city-modal__address">Rauhensteingasse 7, 1010</div>
+          </div>
+          <div class="city-modal__item">
+            <div class="city-modal__item-row">
+              <svg class="city-modal__icon icon"><use href="images/symbol-defs.svg#icon-location"></use></svg>
+              <span class="city-modal__city">Linz</span>
+            </div>
+            <div class="city-modal__address">Prinz-Eugen-Straße 22, 4020</div>
+          </div>
+          <div class="city-modal__item">
+            <div class="city-modal__item-row">
+              <svg class="city-modal__icon icon"><use href="images/symbol-defs.svg#icon-location"></use></svg>
+              <span class="city-modal__city">Innsbruck</span>
+            </div>
+            <div class="city-modal__address">Grabenweg 12, 6020</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="mobile-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="/schedule" class="nav__link">Schedule</a></li>
+        <li class="nav__item"><a href="/rooms" class="nav__link">Rooms</a></li>
+        <li class="nav__item"><a href="/contacts" class="nav__link">Contacts</a></li>
+      </ul>      
+      <div class="contact">
+        <svg class="contact__icon icon">
+          <use href="images/symbol-defs.svg#icon-phone"></use>
+        </svg>
+        <a href="tel:+43 660 806 0000" class="contact__phone">+43 660 806 0000</a>
+      </div>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="hero__bg">
+          <div class="hero__overlay"></div>
+          <div class="hero__content">
+            <div class="hero__text">
+              <h1 class="hero__headline">
+                №1 Escape <br />rooms in <br />Vienna
+              </h1>
+              <p class="hero__subtext">
+                64,232 players have chosen us worldwide
+              </p>
+              <a href="/schedule" class="btn-book">Book Now</a>
+            </div>
+            <div class="hero__badge">
+              <img
+                src="images/emblem.webp"
+                alt="Travellers' Choice Emblem"
+                class="hero__emblem"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rooms-carousel-section">
+       <div class="container">
+          <h2 class="rooms-carousel__title">Our games</h2>
+          <div class="rooms-carousel">
+            <div class="rooms-carousel__track"></div>
+          </div>
+       </di>
+      </section>
+      <section class="rooms-carousel-section">
+        <div class="container">
+           <h2 class="rooms-carousel__title">Our games</h2>
+           <div class="rooms-carousel">
+             <div class="rooms-carousel__track"></div>
+           </div>
+        </di>
+       </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__col footer__col--logo">
+            <img src="images/logo-footer.svg" alt="NoWayOut Logo" class="footer__logo" />
+            <div class="footer__impressum">
+              <div>Impressum</div>
+              <div>Elite Experience EG GmbH.<br>FN 496283a.<br>Prichlackergasse 34, 8053 Graz</div>
+            </div>
+            <div class="footer__payments">
+              <p>We accept:</p>
+              <div class="payment-icons">
+                <img src="images/visa.png" alt="Visa">
+                <img src="images/mastercard.png" alt="Mastercard">
+                <img src="images/applepay.png" alt="Apple Pay">
+                <img src="images/amex.png" alt="American Express">
+                <img src="images/paypal.png" alt="PayPal">
+              </div>
+            </div>
+          </div>
+          <div class="footer__col footer__col--links">
+            <ul>
+              <li><a href="#">Rooms</a></li>
+              <li><a href="#">Gift card</a></li>
+              <li><a href="#">How to play</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Corporate</a></li>
+              <li><a href="#">Birthday parties</a></li>
+              <li><a href="#">Special offer</a></li>
+              <li><a href="#">Bundle</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--right">
+            <button class="footer__to-top" id="footer-to-top" aria-label="Back to top">
+              <svg width="18" height="18"><polyline points="4,10 9,5 14,10" fill="none" stroke="#fff" stroke-width="2"/></svg>
+            </button>
+            <div class="footer__lang-switcher">
+              <a href="#" class="footer__lang footer__lang--active">DE</a>
+              <a href="#" class="footer__lang">EN</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            &copy;2020 NoWayOut. All Rights Reserved
+          </div>
+          <div class="footer__policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+          </div>
+          <div class="footer__socials">
+            <img src="images/facebook.png" alt="Facebook" class="footer__socials-icon">
+            <img src="images/instagram.png" alt="Instagram" class="footer__socials-icon">
+            <img src="images/pinterest.png" alt="Pinterest" class="footer__socials-icon">
+            <img src="images/youtube.png" alt="YouTube" class="footer__socials-icon">
+            <img src="images/linkedin.png" alt="LinkedIn" class="footer__socials-icon">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
