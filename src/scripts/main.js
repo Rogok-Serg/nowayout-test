@@ -1,10 +1,10 @@
 import $ from "jquery";
 import "../styles/style.css";
+import "./rooms-carousel.js";
 import logo from "../images/logo-nwo.svg";
 
 $(document).ready(function () {
   console.log("✅ jQuery is working!");
-  $("body").css("background-color", "rgb(60 135 201)");
 });
 
 const logoImg = $(".logo-img");
@@ -40,6 +40,81 @@ document.addEventListener("DOMContentLoaded", function () {
         opt.classList.remove("lang__option--active")
       );
       this.classList.add("lang__option--active");
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Mobile menu toggle
+  var burger = document.querySelector(".menu-toggle");
+  var mobileMenu = document.querySelector(".mobile-menu");
+  var body = document.body;
+  var menuOpenedByBurger = false;
+
+  function closeMenu() {
+    mobileMenu.classList.remove("mobile-menu--open");
+    body.classList.remove("no-scroll");
+    menuOpenedByBurger = false;
+  }
+
+  if (burger && mobileMenu) {
+    burger.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var isOpen = mobileMenu.classList.toggle("mobile-menu--open");
+      body.classList.toggle("no-scroll");
+      menuOpenedByBurger = isOpen;
+    });
+    // Close menu when clicking outside, only if opened by burger
+    document.addEventListener("click", function (e) {
+      if (
+        menuOpenedByBurger &&
+        mobileMenu.classList.contains("mobile-menu--open") &&
+        !mobileMenu.contains(e.target) &&
+        !burger.contains(e.target)
+      ) {
+        closeMenu();
+      }
+    });
+    // Close menu on nav link click
+    mobileMenu.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeMenu);
+    });
+  }
+
+  // City modal logic
+  var cityModalOverlay = document.getElementById("city-modal-overlay");
+  var cityModal = document.getElementById("city-modal");
+  var cityModalClose = document.getElementById("city-modal-close");
+  var btnBook = document.querySelector(".btn-book");
+
+  function openCityModal() {
+    cityModalOverlay.classList.add("active");
+    document.body.classList.add("no-scroll");
+  }
+  function closeCityModal() {
+    cityModalOverlay.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  }
+
+  if (btnBook && cityModalOverlay && cityModalClose) {
+    btnBook.addEventListener("click", function (e) {
+      e.preventDefault();
+      openCityModal();
+    });
+    cityModalClose.addEventListener("click", closeCityModal);
+    cityModalOverlay.addEventListener("click", function (e) {
+      if (e.target === cityModalOverlay) closeCityModal();
+    });
+  }
+
+  // City selection active state
+  var cityItems = document.querySelectorAll(".city-modal__item");
+  cityItems.forEach(function (item) {
+    item.addEventListener("click", function () {
+      cityItems.forEach(function (i) {
+        i.classList.remove("city-modal__item--active");
+      });
+      this.classList.add("city-modal__item--active");
     });
   });
 });

@@ -27,7 +27,10 @@ export default {
     }),
     new MiniCssExtractPlugin(),
     new CopyWebpackPlugin({
-      patterns: [{ from: "src/images", to: "images" }],
+      patterns: [
+        { from: "src/images", to: "images" },
+        { from: "src/rooms.json", to: "rooms.json" },
+      ],
     }),
   ],
   module: {

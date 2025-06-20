@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nowayout Test Task</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -110,6 +112,50 @@
         </div>
       </div>
     </header>
+    <div class="modal-overlay" id="city-modal-overlay">
+      <div class="city-modal" id="city-modal">
+        <div class="city-modal__header">
+          <span class="city-modal__title">Choose your city:</span>
+          <button class="city-modal__close" id="city-modal-close" aria-label="Close">&times;</button>
+        </div>
+        <div class="city-modal__list">
+          <div class="city-modal__item city-modal__item--active">
+            <div class="city-modal__item-row">
+              <svg class="city-modal__icon icon"><use href="images/symbol-defs.svg#icon-location"></use></svg>
+              <span class="city-modal__city city-modal__city--active">Vienna</span>
+            </div>
+            <div class="city-modal__address">Rauhensteingasse 7, 1010</div>
+          </div>
+          <div class="city-modal__item">
+            <div class="city-modal__item-row">
+              <svg class="city-modal__icon icon"><use href="images/symbol-defs.svg#icon-location"></use></svg>
+              <span class="city-modal__city">Linz</span>
+            </div>
+            <div class="city-modal__address">Prinz-Eugen-Straße 22, 4020</div>
+          </div>
+          <div class="city-modal__item">
+            <div class="city-modal__item-row">
+              <svg class="city-modal__icon icon"><use href="images/symbol-defs.svg#icon-location"></use></svg>
+              <span class="city-modal__city">Innsbruck</span>
+            </div>
+            <div class="city-modal__address">Grabenweg 12, 6020</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="mobile-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="/schedule" class="nav__link">Schedule</a></li>
+        <li class="nav__item"><a href="/rooms" class="nav__link">Rooms</a></li>
+        <li class="nav__item"><a href="/contacts" class="nav__link">Contacts</a></li>
+      </ul>      
+      <div class="contact">
+        <svg class="contact__icon icon">
+          <use href="images/symbol-defs.svg#icon-phone"></use>
+        </svg>
+        <a href="tel:+43 660 806 0000" class="contact__phone">+43 660 806 0000</a>
+      </div>
+    </nav>
     <main>
       <section class="hero">
         <div class="hero__bg">
@@ -119,39 +165,44 @@
               <h1 class="hero__headline">
                 №1 Escape <br />rooms in <br />Vienna
               </h1>
-              <p class="hero__subtext">64,232 players worldwide chose us</p>
-              <a href="/schedule" class="hero__cta">Book Now</a>
+              <p class="hero__subtext">
+                64,232 players have chosen us worldwide
+              </p>
+              <a href="/schedule" class="btn-book">Book Now</a>
             </div>
             <div class="hero__badge">
-              <div class="badge">
-                <div class="badge__circle">
-                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-                    <circle cx="28" cy="28" r="28" fill="#0B9D7A" />
-                    <g>
-                      <path
-                        d="M28 38c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10z"
-                        fill="#fff"
-                      />
-                    </g>
-                  </svg>
-                </div>
-                <div class="badge__text">
-                  <span class="badge__title">Travelers'<br />Choice</span>
-                  <span class="badge__year">2020</span>
-                </div>
-              </div>
+              <img
+                src="images/emblem.webp"
+                alt="Travellers' Choice Emblem"
+                class="hero__emblem"
+              />
             </div>
           </div>
         </div>
       </section>
+      <section class="rooms-carousel-section">
+       <div class="container">
+          <h2 class="rooms-carousel__title">Our games</h2>
+          <div class="rooms-carousel">
+            <div class="rooms-carousel__track"></div>
+          </div>
+       </di>
+      </section>
+      <section class="rooms-carousel-section">
+        <div class="container">
+           <h2 class="rooms-carousel__title">Our games</h2>
+           <div class="rooms-carousel">
+             <div class="rooms-carousel__track"></div>
+           </div>
+        </di>
+       </section>
     </main>
-    <footer>
+    <!-- <footer>
       <div class="container">
         <div class="footer-content">
           <p>Nowayout Test Task</p>
         </div>
       </div>
-    </footer>
-    <script src="scripts/main.js"></script>
+    </footer> -->
   </body>
 </html>
