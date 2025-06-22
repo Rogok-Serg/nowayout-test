@@ -524,6 +524,7 @@ a {
     font-size: 1.1rem;
     width: 100%;
     max-width: 290px;
+    margin: 0 auto;
   }
   .hero__headline-mobile {
     font-size: 1.5rem;
