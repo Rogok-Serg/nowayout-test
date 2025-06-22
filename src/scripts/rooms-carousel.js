@@ -44,5 +44,15 @@ $(function () {
       })
       .join("");
     $track.html(cardsHtml);
+
+    // Add horizontal mouse wheel scrolling
+    $(".rooms-carousel").on("wheel", function (e) {
+      e.preventDefault();
+
+      const scrollAmount = e.originalEvent.deltaY;
+      const scrollSpeed = 50; // Adjust scroll speed as needed
+
+      this.scrollLeft += (scrollAmount * scrollSpeed) / 100;
+    });
   });
 });

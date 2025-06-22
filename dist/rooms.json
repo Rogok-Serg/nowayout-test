@@ -1,0 +1,110 @@
+[
+  {
+    "image": "images/rooms/room1.webp",
+    "tag": "Adventure/Mystery",
+    "title": "Mission Belvedere",
+    "duration": "60 min",
+    "difficulty": "4",
+    "players": "2-6",
+    "desc": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "image": "images/rooms/room2.webp",
+    "tag": "Adventure/Mystery",
+    "title": "School of Magic",
+    "duration": "60 min",
+    "difficulty": "3",
+    "players": "2-6",
+    "desc": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "image": "images/rooms/room3.webp",
+    "tag": "Horror/Thriller",
+    "title": "The Unknown",
+    "duration": "60 min",
+    "difficulty": "5",
+    "players": "2-6",
+    "desc": "Rette die kleine Sandy, sie wurde von einem Dämon in die Kanalisation der Stadt verschleppt. Werdet zum Helden oder bleibt in der Gewalt des Unbekannten."
+  },
+  {
+    "image": "images/rooms/room1.webp",
+    "tag": "Adventure/Mystery",
+    "title": "Mission Belvedere",
+    "duration": "60 min",
+    "difficulty": "4",
+    "players": "2-6",
+    "desc": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "image": "images/rooms/room2.webp",
+    "tag": "Adventure/Mystery",
+    "title": "School of Magic",
+    "duration": "60 min",
+    "difficulty": "3",
+    "players": "2-6",
+    "desc": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "image": "images/rooms/room3.webp",
+    "tag": "Horror/Thriller",
+    "title": "The Unknown",
+    "duration": "60 min",
+    "difficulty": "5",
+    "players": "2-6",
+    "desc": "Rette die kleine Sandy, sie wurde von einem Dämon in die Kanalisation der Stadt verschleppt. Werdet zum Helden oder bleibt in der Gewalt des Unbekannten."
+  },
+  {
+    "image": "images/rooms/room1.webp",
+    "tag": "Adventure/Mystery",
+    "title": "Mission Belvedere",
+    "duration": "60 min",
+    "difficulty": "4",
+    "players": "2-6",
+    "desc": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "image": "images/rooms/room2.webp",
+    "tag": "Adventure/Mystery",
+    "title": "School of Magic",
+    "duration": "60 min",
+    "difficulty": "3",
+    "players": "2-6",
+    "desc": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "image": "images/rooms/room3.webp",
+    "tag": "Horror/Thriller",
+    "title": "The Unknown",
+    "duration": "60 min",
+    "difficulty": "5",
+    "players": "2-6",
+    "desc": "Rette die kleine Sandy, sie wurde von einem Dämon in die Kanalisation der Stadt verschleppt. Werdet zum Helden oder bleibt in der Gewalt des Unbekannten."
+  },
+  {
+    "image": "images/rooms/room1.webp",
+    "tag": "Adventure/Mystery",
+    "title": "Mission Belvedere",
+    "duration": "60 min",
+    "difficulty": "4",
+    "players": "2-6",
+    "desc": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "image": "images/rooms/room2.webp",
+    "tag": "Adventure/Mystery",
+    "title": "School of Magic",
+    "duration": "60 min",
+    "difficulty": "3",
+    "players": "2-6",
+    "desc": "Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts \"Der Kuss\" aus Österreichs sicherstem Museum zu stehlen."
+  },
+  {
+    "image": "images/rooms/room3.webp",
+    "tag": "Horror/Thriller",
+    "title": "The Unknown",
+    "duration": "60 min",
+    "difficulty": "5",
+    "players": "2-6",
+    "desc": "Rette die kleine Sandy, sie wurde von einem Dämon in die Kanalisation der Stadt verschleppt. Werdet zum Helden oder bleibt in der Gewalt des Unbekannten."
+  }
+]
